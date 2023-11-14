@@ -1,4 +1,4 @@
-﻿namespace CapetoneBEMovie.Models
+﻿namespace CapstoneBEMovie.Models
 {
     public class Genre
     {
