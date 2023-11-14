@@ -59,19 +59,36 @@ app.MapGet("/movie", (CapstoneBEMovieDbContext db) =>
     return db.Movies.ToList();
 });
 
+app.MapGet("/api/MoviesbyGenreID/{genreid}", (CapstoneBEMovieDbContext db, int genreid) =>
+{
+    var movie = db.Movies.Where(s => s.GenreId == genreid)
+    .Include(s => s.Genre).ToList();
+    return movie;
+}
+);
+
+app.MapGet("/api/MoviesbyDirectorId/{directorid}", (CapstoneBEMovieDbContext db, int directorid) =>
+{
+    var movie = db.Movies.Where(s => s.DirectorId == directorid)
+    .Include(s => s.Genre).ToList();
+    return movie;
+}
+);
+
+
 app.MapGet("/movie/{id}", (CapstoneBEMovieDbContext db, int id) =>
 {
     var movies = db.Movies.SingleOrDefaultAsync(u => u.Id == id);
     return movies;
 });
 
-app.MapGet("/api/MoviesbyDirectorId/{id}", (CapstoneBEMovieDbContext db, int id) =>
+/*app.MapGet("/api/MoviesbyDirectorId/{id}", (CapstoneBEMovieDbContext db, int id) =>
 {
     var movie = db.Movies.Where(s => s.DirectorId == id)
     .Include(s => s.Director).ToList();
     return movie;
 }
-);
+);*/
 
 app.MapPost("/api/movie", (CapstoneBEMovieDbContext db, Movie movie) =>
 {
@@ -151,7 +168,7 @@ app.MapPost("/api/director", (CapstoneBEMovieDbContext db, Director director) =>
     return Results.Created($"/api/director/{director.Id}", director);
 });
 
-app.MapPost("/api/editItem", (CapstoneBEMovieDbContext db, Director director) =>
+app.MapPost("/api/editItems", (CapstoneBEMovieDbContext db, Director director) =>
 {
     // Check if an item with the same ID already exists
     var existingItem = db.Directors.Find(director.Id);
@@ -194,7 +211,7 @@ app.MapDelete("/api/directorsbyID/{id}", (CapstoneBEMovieDbContext db, int id) =
     db.SaveChanges();
     return Results.NoContent();
 
-});
+}); 
 
 //genres
 
@@ -208,6 +225,9 @@ app.MapGet("/genre/{genrename}", (CapstoneBEMovieDbContext db, string genrename)
     var genres = db.Genres.SingleOrDefaultAsync(u => u.GenreName == genrename);
     return genres;
 });
+
+
+
 
 //users
 
@@ -229,7 +249,7 @@ app.MapGet("/user", (CapstoneBEMovieDbContext db) =>
     return db.Users.ToList();
 });
 
-app.MapGet("/user/{id}", (CapstoneBEMovieDbContext db, int id) =>
+app.MapGet("/users/{id}", (CapstoneBEMovieDbContext db, int id) =>
 {
     var user = db.Users.Where(u => u.Id == id);
     return user;
