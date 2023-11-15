@@ -75,6 +75,36 @@ app.MapGet("/api/MoviesbyDirectorId/{directorid}", (CapstoneBEMovieDbContext db,
 }
 );
 
+app.MapGet("/movie1", (CapstoneBEMovieDbContext db) =>
+{
+    var movies = db.Movies
+        .Where(s => s.GenreId == 1)
+        .Include(s => s.Genre)
+        .ToList();
+
+    return movies;
+});
+
+app.MapGet("/movie2", (CapstoneBEMovieDbContext db) =>
+{
+    var movies = db.Movies
+        .Where(s => s.GenreId == 2)
+        .Include(s => s.Genre)
+        .ToList();
+
+    return movies;
+});
+
+app.MapGet("/movie3", (CapstoneBEMovieDbContext db) =>
+{
+    var movies = db.Movies
+        .Where(s => s.GenreId == 3)
+        .Include(s => s.Genre)
+        .ToList();
+
+    return movies;
+});
+
 app.MapGet("/movie4", (CapstoneBEMovieDbContext db) =>
 {
     var movies = db.Movies
@@ -85,9 +115,75 @@ app.MapGet("/movie4", (CapstoneBEMovieDbContext db) =>
     return movies;
 });
 
+app.MapGet("/movie5", (CapstoneBEMovieDbContext db) =>
+{
+    var movies = db.Movies
+        .Where(s => s.GenreId == 5)
+        .Include(s => s.Genre)
+        .ToList();
 
+    return movies;
+});
 
+app.MapGet("/movie6", (CapstoneBEMovieDbContext db) =>
+{
+    var movies = db.Movies
+        .Where(s => s.GenreId == 6)
+        .Include(s => s.Genre)
+        .ToList();
 
+    return movies;
+});
+
+app.MapGet("/movie7", (CapstoneBEMovieDbContext db) =>
+{
+    var movies = db.Movies
+        .Where(s => s.GenreId == 7)
+        .Include(s => s.Genre)
+        .ToList();
+
+    return movies;
+});
+
+app.MapGet("/movie8", (CapstoneBEMovieDbContext db) =>
+{
+    var movies = db.Movies
+        .Where(s => s.GenreId == 8)
+        .Include(s => s.Genre)
+        .ToList();
+
+    return movies;
+});
+
+app.MapGet("/movie9", (CapstoneBEMovieDbContext db) =>
+{
+    var movies = db.Movies
+        .Where(s => s.GenreId == 9)
+        .Include(s => s.Genre)
+        .ToList();
+
+    return movies;
+});
+
+app.MapGet("/movie10", (CapstoneBEMovieDbContext db) =>
+{
+    var movies = db.Movies
+        .Where(s => s.GenreId == 10)
+        .Include(s => s.Genre)
+        .ToList();
+
+    return movies;
+});
+
+app.MapGet("/movie11", (CapstoneBEMovieDbContext db) =>
+{
+    var movies = db.Movies
+        .Where(s => s.GenreId == 11)
+        .Include(s => s.Genre)
+        .ToList();
+
+    return movies;
+});
 app.MapGet("/movie/{id}", (CapstoneBEMovieDbContext db, int id) =>
 {
     var movies = db.Movies.SingleOrDefaultAsync(u => u.Id == id);
