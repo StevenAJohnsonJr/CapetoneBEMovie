@@ -75,6 +75,18 @@ app.MapGet("/api/MoviesbyDirectorId/{directorid}", (CapstoneBEMovieDbContext db,
 }
 );
 
+app.MapGet("/movie4", (CapstoneBEMovieDbContext db) =>
+{
+    var movies = db.Movies
+        .Where(s => s.GenreId == 4)
+        .Include(s => s.Genre)
+        .ToList();
+
+    return movies;
+});
+
+
+
 
 app.MapGet("/movie/{id}", (CapstoneBEMovieDbContext db, int id) =>
 {
@@ -82,13 +94,13 @@ app.MapGet("/movie/{id}", (CapstoneBEMovieDbContext db, int id) =>
     return movies;
 });
 
-/*app.MapGet("/api/MoviesbyDirectorId/{id}", (CapstoneBEMovieDbContext db, int id) =>
+app.MapGet("/api/MoviesbyDirectorId/{id}", (CapstoneBEMovieDbContext db, int id) =>
 {
     var movie = db.Movies.Where(s => s.DirectorId == id)
     .Include(s => s.Director).ToList();
     return movie;
 }
-);*/
+);
 
 app.MapPost("/api/movie", (CapstoneBEMovieDbContext db, Movie movie) =>
 {
