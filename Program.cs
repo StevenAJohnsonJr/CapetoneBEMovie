@@ -328,9 +328,15 @@ app.MapGet("/genre", (CapstoneBEMovieDbContext db) =>
     return db.Genres.ToList();
 });
 
-app.MapGet("/genre/{genrename}", (CapstoneBEMovieDbContext db, string genrename) =>
+app.MapGet("/genrebyName/{genrename}", (CapstoneBEMovieDbContext db, string genrename) =>
 {
     var genres = db.Genres.SingleOrDefaultAsync(u => u.GenreName == genrename);
+    return genres;
+});
+
+app.MapGet("/genreById/{id}", (CapstoneBEMovieDbContext db, int id) =>
+{
+    var genres = db.Genres.SingleOrDefaultAsync(u => u.Id == id);
     return genres;
 });
 

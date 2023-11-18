@@ -294,14 +294,14 @@ namespace CapstoneBEMovie
             {
                new Genre { Id = 1, GenreName = "Comedy" },
                new Genre { Id = 2, GenreName = "RomCom" },
-               new Genre { Id = 3, GenreName = "Mystery/Thriller" },
+               new Genre { Id = 3, GenreName = "Mystery-Thriller" },
                new Genre { Id = 4, GenreName = "Action" },
                new Genre { Id = 5, GenreName = "Horror" },
                new Genre { Id = 6, GenreName = "Holiday" },
                new Genre { Id = 7, GenreName = "Family"},
                new Genre { Id = 8, GenreName = "Sci-Fi"},
                new Genre { Id = 9, GenreName = "Western"},
-               new Genre { Id = 10, GenreName = "Documenty",},
+               new Genre { Id = 10, GenreName = "Documentary",},
                new Genre { Id = 11, GenreName = "Drama"},
             });
 
