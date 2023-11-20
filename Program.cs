@@ -54,6 +54,23 @@ app.UseHttpsRedirection();
 
 //movies
 
+app.MapGet("/randommovie", (CapstoneBEMovieDbContext db) =>
+{
+    // Get the count of movies in the database
+    var totalMoviesCount = db.Movies.Count();
+
+    // Generate a random movie ID
+    var random = new Random();
+    var randomMovieId = random.Next(1, totalMoviesCount + 1);
+
+    // Fetch the random movie from the database
+    var randomMovie = db.Movies.SingleOrDefaultAsync(u => u.Id == randomMovieId);
+
+    // Return the random movie
+    return randomMovie;
+});
+
+
 app.MapGet("/movie", (CapstoneBEMovieDbContext db) =>
 {
     return db.Movies.ToList();
@@ -67,7 +84,7 @@ app.MapGet("/api/MoviesbyGenreID/{genreid}", (CapstoneBEMovieDbContext db, int g
 }
 );
 
-app.MapGet("/api/MoviesbyDirectorId/{directorid}", (CapstoneBEMovieDbContext db, int directorid) =>
+app.MapGet("/api/MoviesbyDirectorId2/{directorid}", (CapstoneBEMovieDbContext db, int directorid) =>
 {
     var movie = db.Movies.Where(s => s.DirectorId == directorid)
     .Include(s => s.Genre).ToList();
