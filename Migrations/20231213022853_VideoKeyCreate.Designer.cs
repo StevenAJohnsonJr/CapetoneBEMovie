@@ -3,6 +3,7 @@ using System;
 using CapstoneBEMovie;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CaptoneBEMovie.Migrations
 {
     [DbContext(typeof(CapstoneBEMovieDbContext))]
-    partial class CapstoneBEMovieDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231213022853_VideoKeyCreate")]
+    partial class VideoKeyCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

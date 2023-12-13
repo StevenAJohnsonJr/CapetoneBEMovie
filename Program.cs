@@ -247,6 +247,7 @@ app.MapPut("/movie/{id}", (CapstoneBEMovieDbContext db, int id, Movie movie) =>
         return Results.NotFound();
     }
     itemToUpdate.Id = movie.Id;
+    itemToUpdate.Title = movie.Title;
     itemToUpdate.DirectorId = movie.DirectorId;
     itemToUpdate.GenreId = movie.GenreId;
     itemToUpdate.Description = movie.Description;
@@ -254,6 +255,7 @@ app.MapPut("/movie/{id}", (CapstoneBEMovieDbContext db, int id, Movie movie) =>
     itemToUpdate.Length = movie.Length;
     itemToUpdate.IsForeign = movie.IsForeign;
     itemToUpdate.Rated = movie.Rated;
+    itemToUpdate.Rating = movie.Rating;
     itemToUpdate.SteamingOn = movie.SteamingOn;
     itemToUpdate.ImgUrl = movie.ImgUrl;
 
