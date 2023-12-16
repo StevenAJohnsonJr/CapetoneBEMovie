@@ -14,6 +14,7 @@
         public string? Rated { get; set; }
         public string? SteamingOn { get; set; }
         public string? ImgUrl { get; set; }
+        public string? VideoKey { get; set; }
         public User? User { get; set; }
         public List<Director> Director { get; set;}
         public List<Genre> Genre { get; set; }

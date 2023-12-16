@@ -3,6 +3,7 @@ using System;
 using CapstoneBEMovie;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CaptoneBEMovie.Migrations
 {
     [DbContext(typeof(CapstoneBEMovieDbContext))]
-    partial class CapstoneBEMovieDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231213022853_VideoKeyCreate")]
+    partial class VideoKeyCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -1547,7 +1549,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.9/5",
                             SteamingOn = "Hulu, Peacock, Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu",
                             Title = "Shaun of the Dead",
-                            VideoKey = "https://youtu.be/LIfcaZ4pC-4?si=02K54zEUHP2wBn2Z ",
+                            VideoKey = " ",
                             Year = 2004
                         },
                         new
@@ -1563,7 +1565,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.1/5",
                             SteamingOn = "FXNOW, Hulu, Peacock, Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu",
                             Title = "There's Something About Mary",
-                            VideoKey = "https://youtu.be/503D8hOfE_8?si=Nuuq9xIG6TSvWKqv ",
+                            VideoKey = " ",
                             Year = 1998
                         },
                         new
@@ -1579,7 +1581,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.2/5",
                             SteamingOn = "Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu",
                             Title = "Rush Hour",
-                            VideoKey = "https://youtu.be/JMiFsFQcFLE?si=wmI69wOBYyLjLHXk ",
+                            VideoKey = " ",
                             Year = 1998
                         },
                         new
@@ -1595,7 +1597,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.3/5",
                             SteamingOn = "Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu",
                             Title = "Rush Hour 2",
-                            VideoKey = "https://youtu.be/SCTzYY95Aw4?si=hY1Pz2gWgr_URbP3 ",
+                            VideoKey = " ",
                             Year = 2001
                         },
                         new
@@ -1611,7 +1613,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu",
                             Title = "Rush Hour 3",
-                            VideoKey = "https://youtu.be/FRDRWXfQyJE?si=pkKShD89AXK91yro ",
+                            VideoKey = " ",
                             Year = 2007
                         },
                         new
@@ -1627,7 +1629,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.2/5",
                             SteamingOn = "Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu",
                             Title = "Money Talks",
-                            VideoKey = "https://youtu.be/juTBjT-hzlc?si=ohlsSqH42Ri9bT0e ",
+                            VideoKey = " ",
                             Year = 1997
                         },
                         new
@@ -1643,7 +1645,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.5/5",
                             SteamingOn = "Sling TV, Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu",
                             Title = "Coming to America",
-                            VideoKey = "https://youtu.be/KFroCRDXw5E?si=pjFERmXnEGiHnQI5 ",
+                            VideoKey = " ",
                             Year = 1988
                         },
                         new
@@ -1659,7 +1661,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "2.5/5",
                             SteamingOn = "Roku Channel, Sling TV, Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu",
                             Title = "The Nutty Professor",
-                            VideoKey = "https://youtu.be/o3wJ-jzZqBw?si=7Vac65M81ChMdTXW ",
+                            VideoKey = " ",
                             Year = 1996
                         },
                         new
@@ -1675,7 +1677,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "2/5",
                             SteamingOn = "Roku Channel, Sling TV, Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu",
                             Title = "Nutty Professor II: The Klumps",
-                            VideoKey = "https://youtu.be/UVqXU5wsBFE?si=HOU6HvRY1inW5wmI ",
+                            VideoKey = " ",
                             Year = 2000
                         },
                         new
@@ -1691,7 +1693,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3/5",
                             SteamingOn = "Sling TV, Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu, Peacock",
                             Title = "Life",
-                            VideoKey = "https://youtu.be/7R_vTEEyxoo?si=C0k9d2MtJmgYXkIW ",
+                            VideoKey = " ",
                             Year = 1999
                         },
                         new
@@ -1707,7 +1709,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Showtime, Paramount, fuboTV, Sling TV, Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu,",
                             Title = "Beverly Hills Cop",
-                            VideoKey = "https://youtu.be/oc3sPICXZLs?si=_8mUmu4mXRIm4vQM ",
+                            VideoKey = " ",
                             Year = 1984
                         },
                         new
@@ -1723,7 +1725,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Showtime, Paramount, fuboTV, Sling TV, Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu,",
                             Title = "Beverly Hills Cop II",
-                            VideoKey = "https://youtu.be/2QHk337vv4Y?si=9fw0Z8ZWHAnY8jI3 ",
+                            VideoKey = " ",
                             Year = 1987
                         },
                         new
@@ -1739,7 +1741,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "2.5/5",
                             SteamingOn = "Hulu, Showtime, Paramount, fuboTV, Sling TV, Redbox, Amazon Prime, Google Play Movies & YV, Apple TV, Vudu,",
                             Title = "Beverly Hills Cop III",
-                            VideoKey = "https://youtu.be/DbP7Ptyr1sA?si=kwudtzJ4sG2ht9vd ",
+                            VideoKey = " ",
                             Year = 1994
                         },
                         new
@@ -1755,7 +1757,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Amazon Prime, Google Play Movies & YV, Apple TV, Vudu, Tubi",
                             Title = "House Party",
-                            VideoKey = "https://youtu.be/X4Cgazhox24?si=WX8Y-L724MpqQbns ",
+                            VideoKey = " ",
                             Year = 1990
                         },
                         new
@@ -1771,7 +1773,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3/5",
                             SteamingOn = "Amazon Prime, Google Play Movies & YV, Apple TV, Vudu, Tubi",
                             Title = "House Party 2",
-                            VideoKey = "https://youtu.be/Fcv3v2JIj34?si=joe_W6WMxWykDgrV ",
+                            VideoKey = " ",
                             Year = 1991
                         },
                         new
@@ -1787,7 +1789,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "2/5",
                             SteamingOn = "Amazon Prime, Google Play Movies & YV, Apple TV, Vudu, Tubi",
                             Title = "House Party 3",
-                            VideoKey = "https://youtu.be/nhdpCI--YbQ?si=1WkgWHZtTbTT2Hrj ",
+                            VideoKey = " ",
                             Year = 1994
                         },
                         new
@@ -1803,7 +1805,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "2.5/5",
                             SteamingOn = "Amazon Prime, Google Play Movies & TV, Apple TV, Vudu, Tubi",
                             Title = "House Party 4: Down to the Last Minute",
-                            VideoKey = "https://youtu.be/JS5b3yIWcqw?si=5G_2wZaeh-eZN2A5 ",
+                            VideoKey = " ",
                             Year = 2001
                         },
                         new
@@ -1819,7 +1821,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "1.8/5",
                             SteamingOn = "Max, Hulu Tubi, YouTube, Vude, Redbox, Apple TV, Google Play Movies & TV",
                             Title = "House Party",
-                            VideoKey = "https://youtu.be/eOajigW8hmA?si=rRU8CWYmoTmPD1gQ ",
+                            VideoKey = " ",
                             Year = 2023
                         },
                         new
@@ -1835,7 +1837,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.3/5",
                             SteamingOn = "Max, Hulu Tubi, YouTube, Vude, Redbox, Apple TV, Google Play Movies & TV",
                             Title = "The Silence of the Lambs",
-                            VideoKey = "https://youtu.be/6iB21hsprAQ?si=s4MNT9Th1lt8HVYz ",
+                            VideoKey = " ",
                             Year = 1991
                         },
                         new
@@ -1851,7 +1853,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.6/5",
                             SteamingOn = "Hulu Tubi, YouTube, Vude, Redbox, Apple TV, Google Play Movies & TV",
                             Title = "Seven",
-                            VideoKey = "https://youtu.be/znmZoVkCjpI?si=KY3p1rV9oDR89phG ",
+                            VideoKey = " ",
                             Year = 1978
                         },
                         new
@@ -1867,7 +1869,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "YouTube, Vudu, Redbox, Apple TV, Google Play Movies & TV, AMC,Sling TV, Philo ",
                             Title = "Vertigo",
-                            VideoKey = "https://youtu.be/Z5jvQwwHQNY?si=hIKt7P1i8ReY64dX ",
+                            VideoKey = " ",
                             Year = 1958
                         },
                         new
@@ -1883,7 +1885,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.4/5",
                             SteamingOn = "Plex, Tubi, YouTube, Vudu, Redbox, Apple TV, Google Play Movies & TV ",
                             Title = "Memento",
-                            VideoKey = "https://youtu.be/4CV41hoyS8A?si=_WpR45xIVDjqNtZS ",
+                            VideoKey = " ",
                             Year = 2000
                         },
                         new
@@ -1899,7 +1901,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.5/5",
                             SteamingOn = "Peacock, AMC,Plex, Tubi, YouTube, Vudu, Redbox, Apple TV, Google Play Movies & TV, Sling TV ",
                             Title = "Psycho",
-                            VideoKey = "https://youtu.be/NG3-GlvKPcg?si=SvYCor_oxD1RALCL ",
+                            VideoKey = " ",
                             Year = 1960
                         },
                         new
@@ -1915,7 +1917,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Amazon Prime, FuboTV, YouTube, Vudu, Redbox, Apple TV, Google Play Movies & TV, Sling TV",
                             Title = "Shutter Island",
-                            VideoKey = "https://youtu.be/v8yrZSkKxTA?si=kCnxDAEAKCrEo-kl ",
+                            VideoKey = " ",
                             Year = 1978
                         },
                         new
@@ -1931,7 +1933,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Amazon Prime, YouTube, Vudu, Redbox, Apple TV, Google Play Movies & TV",
                             Title = "Inception",
-                            VideoKey = "https://youtu.be/YoHD9XEInc0?si=zteyZIizmQ9LCn1d ",
+                            VideoKey = " ",
                             Year = 1978
                         },
                         new
@@ -1947,7 +1949,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.5/5",
                             SteamingOn = "Sling TV, Amazon Prime, YouTube, Vudu, Redbox, Apple TV, Google Play Movies & TV",
                             Title = "Rear Window",
-                            VideoKey = "https://youtu.be/R1Av5y_VUdQ?si=GNAyiVJ9vZYMwC4o ",
+                            VideoKey = " ",
                             Year = 1954
                         },
                         new
@@ -1963,7 +1965,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube",
                             Title = "Oldboy",
-                            VideoKey = "https://youtu.be/tAaBkFChaRg?si=Q_pQ2g4kPFlwL3C7 ",
+                            VideoKey = " ",
                             Year = 2003
                         },
                         new
@@ -1979,7 +1981,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Showtime, Hulu, ",
                             Title = "Zodiac",
-                            VideoKey = "https://youtu.be/yNncHPl1UXg?si=r5o4eSSnhCn348m2 ",
+                            VideoKey = " ",
                             Year = 2007
                         },
                         new
@@ -1995,7 +1997,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Max, Hulu",
                             Title = "Gone Girl",
-                            VideoKey = "https://youtu.be/2-_-1nJf8Vg?si=96AgjG979WitsDjI ",
+                            VideoKey = " ",
                             Year = 2014
                         },
                         new
@@ -2011,7 +2013,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.7/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Max, Hulu",
                             Title = "The Prestige",
-                            VideoKey = "https://youtu.be/ELq7V8vkekI?si=q8-feXSnmtOEpBwR ",
+                            VideoKey = " ",
                             Year = 2006
                         },
                         new
@@ -2027,7 +2029,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "5/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Max, MGM, Paramount, Roku Channel",
                             Title = "Chinatown",
-                            VideoKey = "https://youtu.be/Z70axRwP74Q?si=HOVW9Pt3i0O7J4fd ",
+                            VideoKey = " ",
                             Year = 1974
                         },
                         new
@@ -2043,7 +2045,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube,",
                             Title = "Black Swan",
-                            VideoKey = "https://youtu.be/EqrRVKJcN7I?si=2npGia60Z0zetu1P ",
+                            VideoKey = " ",
                             Year = 2010
                         },
                         new
@@ -2059,7 +2061,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.5/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Sling TV",
                             Title = "The Manchurian Candidate",
-                            VideoKey = "https://youtu.be/Oc8LpuM5Bhs?si=h_XkK7wCJvpjhZNX ",
+                            VideoKey = " ",
                             Year = 1978
                         },
                         new
@@ -2075,7 +2077,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube,",
                             Title = "The Manchurian Candidate",
-                            VideoKey = "https://youtu.be/Q2c5-L5qBvM?si=P6lNhE9gl9yGYe-v ",
+                            VideoKey = " ",
                             Year = 2004
                         },
                         new
@@ -2091,7 +2093,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.5/5",
                             SteamingOn = "TNT, TBS, Netflix, Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Max, Hulu",
                             Title = "The Dark Knight",
-                            VideoKey = "https://youtu.be/_PZpmTj1Q8Q?si=RGKRZp7boZaDZ35o ",
+                            VideoKey = " ",
                             Year = 1978
                         },
                         new
@@ -2107,7 +2109,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Amazon Prime, Vudu, Google Play Movies & TV, YouTube",
                             Title = "Taxi Driver",
-                            VideoKey = "https://youtu.be/UUxD4-dEzn0?si=0QaqXqQ_cIOx_eSt ",
+                            VideoKey = " ",
                             Year = 1976
                         },
                         new
@@ -2123,7 +2125,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Amazon Prime, Vudu, Google Play Movies & TV, YouTube",
                             Title = "The Sixth Sense",
-                            VideoKey = "https://youtu.be/3-ZP95NF_Wk?si=Hq17UEklROtK_giz ",
+                            VideoKey = " ",
                             Year = 1999
                         },
                         new
@@ -2139,7 +2141,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.2/5",
                             SteamingOn = "Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Max, Hulu, Showtime, FuboTV",
                             Title = "Mulholland Drive",
-                            VideoKey = "https://youtu.be/jbZJ487oJlY?si=t_Q5AuyzCFUBhgNh ",
+                            VideoKey = " ",
                             Year = 1993
                         },
                         new
@@ -2155,7 +2157,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Tubi",
                             Title = "The Fugitive",
-                            VideoKey = "https://youtu.be/OlYsVq6FpuU?si=U-BFdyYhYIuU8OCi ",
+                            VideoKey = " ",
                             Year = 1993
                         },
                         new
@@ -2171,7 +2173,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV",
                             Title = "North by Northwest",
-                            VideoKey = "https://youtu.be/ek7T9Gyl_J4?si=yPLY2beCGlESLNWa ",
+                            VideoKey = " ",
                             Year = 1959
                         },
                         new
@@ -2187,7 +2189,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.2/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV",
                             Title = "The Departed",
-                            VideoKey = "https://youtu.be/iQpb1LoeVUc?si=h_EOUxeRoX1-6K65 ",
+                            VideoKey = " ",
                             Year = 2006
                         },
                         new
@@ -2203,7 +2205,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.2/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV",
                             Title = "Cape Fear",
-                            VideoKey = "https://youtu.be/mPsOIhZJug4?si=6PYL1FqLD7l477ha ",
+                            VideoKey = " ",
                             Year = 1991
                         },
                         new
@@ -2219,7 +2221,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.5/5",
                             SteamingOn = "Netflix, Apple TV, Amazon Prime, Vudu, Google Play Movies & TV,",
                             Title = "Prisoners",
-                            VideoKey = "https://youtu.be/bpXfcTF6iVk?si=cC-5TsfRr3Q0zFnl ",
+                            VideoKey = " ",
                             Year = 2013
                         },
                         new
@@ -2235,7 +2237,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.2/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Tubi, Pluto",
                             Title = "The Usual Suspects",
-                            VideoKey = "https://youtu.be/oiXdPolca5w?si=ROM27xfibLwzULFD ",
+                            VideoKey = " ",
                             Year = 1995
                         },
                         new
@@ -2251,7 +2253,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3/5",
                             SteamingOn = "Roku Channel, Paramount,  Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Max, Hulu, Showtime, FuboTV, Redbox, Sling TV",
                             Title = "Basic Instinct",
-                            VideoKey = "https://youtu.be/EhRhuJOJkGg?si=rSn5gzJckl25ST2t ",
+                            VideoKey = " ",
                             Year = 1992
                         },
                         new
@@ -2267,7 +2269,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube",
                             Title = "Mystic River",
-                            VideoKey = "https://youtu.be/ZUPnGySXuv4?si=_-uZzkJhIbt0ZOqF ",
+                            VideoKey = " ",
                             Year = 2003
                         },
                         new
@@ -2283,7 +2285,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.5/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube",
                             Title = "The Game",
-                            VideoKey = "https://youtu.be/nsKdR05ZsGE?si=q8It68EJY0e03qOa ",
+                            VideoKey = " ",
                             Year = 1997
                         },
                         new
@@ -2299,7 +2301,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube",
                             Title = "Sherlock Holmes: A Game of Shadows",
-                            VideoKey = "https://youtu.be/V1OYiPa-eLg?si=TggqNexkCOOOlvtm ",
+                            VideoKey = " ",
                             Year = 2013
                         },
                         new
@@ -2315,7 +2317,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.5/5",
                             SteamingOn = "Amazon Prime, Vudu, Google Play Movies & TV, Roku Chanel, Philo",
                             Title = "Clue",
-                            VideoKey = "https://youtu.be/5GfxyYgoMHY?si=WRBIAHEB7uf8k5iV ",
+                            VideoKey = " ",
                             Year = 1985
                         },
                         new
@@ -2331,7 +2333,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "2.2/5",
                             SteamingOn = "TBS, TNT, Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube",
                             Title = "The Girl on the Train",
-                            VideoKey = "https://youtu.be/y5yk-HGqKmM?si=Zl6i_HCzmU9wbfFb ",
+                            VideoKey = " ",
                             Year = 2016
                         },
                         new
@@ -2347,7 +2349,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Netflix",
                             Title = "The Woman in the Window",
-                            VideoKey = "https://youtu.be/v_0GJg_Jnlo?si=Xi9QjmtuYRi_LzVp ",
+                            VideoKey = " ",
                             Year = 2021
                         },
                         new
@@ -2363,7 +2365,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, FlixLatino, Google Play Movies & TV, YouTube,",
                             Title = "The Invisible Guest",
-                            VideoKey = "https://youtu.be/epCg2RbyF80?si=3iimYxfdiDA49IMe ",
+                            VideoKey = " ",
                             Year = 2016
                         },
                         new
@@ -2379,7 +2381,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Redbox",
                             Title = "Tinker Tailor Soldier Spy",
-                            VideoKey = "https://youtu.be/VW-F1H-Nonk?si=KqxfB08VFJcDoy13 ",
+                            VideoKey = " ",
                             Year = 2011
                         },
                         new
@@ -2395,7 +2397,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Redbox,",
                             Title = "Gosford Park",
-                            VideoKey = "https://youtu.be/o0m00hg1PKY?si=zPD7jMDzYKnNG6wZ ",
+                            VideoKey = " ",
                             Year = 2001
                         },
                         new
@@ -2411,7 +2413,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.1/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Redbox,",
                             Title = "Rope",
-                            VideoKey = "https://youtu.be/8xkQoH8QbVs?si=ZTUTaA6V82UvGssw ",
+                            VideoKey = " ",
                             Year = 1948
                         },
                         new
@@ -2427,7 +2429,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.5/5",
                             SteamingOn = "Paramount,  Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Redbox, Pluto",
                             Title = "Primal Fear",
-                            VideoKey = "https://youtu.be/3WXKqlUHhzg?si=m7et9NJyo7HzrA-4 ",
+                            VideoKey = " ",
                             Year = 2010
                         },
                         new
@@ -2443,7 +2445,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "5/5",
                             SteamingOn = "Roku Channel, Paramount,  Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, FuboTV, ABC",
                             Title = "Murder on the Orient Express",
-                            VideoKey = "https://youtu.be/kjSN6hmg2UY?si=lWUuQ7YpLme-w_AU ",
+                            VideoKey = " ",
                             Year = 1974
                         },
                         new
@@ -2459,7 +2461,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Redbox, Hulu,",
                             Title = "Murder on the Orient Express",
-                            VideoKey = "https://youtu.be/z68frP9Q7XA?si=L1eO_9NNdS9Q1tsQ ",
+                            VideoKey = " ",
                             Year = 2017
                         },
                         new
@@ -2475,7 +2477,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube,",
                             Title = "Knives Out",
-                            VideoKey = "https://youtu.be/qGqiHJTsRkQ?si=-NR2SEURozPTzyKn ",
+                            VideoKey = " ",
                             Year = 2019
                         },
                         new
@@ -2491,7 +2493,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Netflix",
                             Title = "Glass Onion: A Knives Out Mystery",
-                            VideoKey = "https://youtu.be/-xR_lBtEvSc?si=4dNshgWtHb890Clh ",
+                            VideoKey = " ",
                             Year = 1978
                         },
                         new
@@ -2507,7 +2509,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.2/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube,",
                             Title = "8mm",
-                            VideoKey = "https://youtu.be/mjIGbTTw3i8?si=lJifZr9Yfm3zyzwz ",
+                            VideoKey = " ",
                             Year = 1999
                         },
                         new
@@ -2523,7 +2525,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.5/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube,",
                             Title = "Bad Times at the El Royale",
-                            VideoKey = "https://youtu.be/y7wzBVARwaU?si=lFfqGNlSzCJY3uTD ",
+                            VideoKey = " ",
                             Year = 2018
                         },
                         new
@@ -2539,7 +2541,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube,",
                             Title = "Murder by Death",
-                            VideoKey = "https://youtu.be/NKFWMFJsO8w?si=Gj5xi8InsGKcrwlU ",
+                            VideoKey = " ",
                             Year = 1976
                         },
                         new
@@ -2555,7 +2557,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.8/5",
                             SteamingOn = "Roku Channel, Paramount,  Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Redbox",
                             Title = "Minority Report",
-                            VideoKey = "https://youtu.be/lG7DGMgfOb8?si=dR1GqNivcW8xQpRf ",
+                            VideoKey = " ",
                             Year = 1978
                         },
                         new
@@ -2571,7 +2573,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Roku Channel, Paramount,  Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Redbox, Max, Hulu, Showtime, FuboTV, Sling TV",
                             Title = "Side Effects",
-                            VideoKey = "https://youtu.be/EFEou3MBLi4?si=XCvmDY72RU4xHBVw ",
+                            VideoKey = " ",
                             Year = 2013
                         },
                         new
@@ -2587,13 +2589,13 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4.3/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Redbox",
                             Title = "Fracture",
-                            VideoKey = "https://youtu.be/b_VIMmdvC3c?si=YjXCMFkXu8yQOx7r ",
+                            VideoKey = " ",
                             Year = 2007
                         },
                         new
                         {
                             Id = 109,
-                            Description = "Congressman Stephen Collins (Ben Affleck) is a rising star in Washington; handsome, unflappable and seemingly honorable, he's seen as his party's next presidential nominee. Until, however, his research assistant/mistress is found murdered and damaging secrets come pouring out. Journalist Cal McAffrey (Russell Crowe), Collins' old friend, must investigate the murder, and walks headlong into a massive cover-up involving some of the nation's most promising political and corporate figures.",
+                            Description = "yadadad",
                             DirectorId = 1,
                             GenreId = 1,
                             ImgUrl = "data:image/jpeg;base64,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",
@@ -2602,9 +2604,9 @@ namespace CaptoneBEMovie.Migrations
                             Rated = "PG-13",
                             Rating = "4/5",
                             SteamingOn = "Netflix, Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Redbox",
-                            Title = "State Of Play",
-                            VideoKey = "https://youtu.be/6KU0Vu991XE?si=6bjNgPmN6Zk69H8r ",
-                            Year = 2009
+                            Title = "Friday",
+                            VideoKey = " ",
+                            Year = 1978
                         },
                         new
                         {
@@ -2619,7 +2621,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube,",
                             Title = "High Crimes",
-                            VideoKey = "https://youtu.be/XF5JYLTN4ZA?si=M4jyVPsKhV1bP9Mg ",
+                            VideoKey = " ",
                             Year = 2002
                         },
                         new
@@ -2635,7 +2637,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube,",
                             Title = "Along Came a Spider ",
-                            VideoKey = "https://youtu.be/rJsAVoKlbLk?si=b9Al6WX9NA8bJx8o ",
+                            VideoKey = " ",
                             Year = 2001
                         },
                         new
@@ -2651,7 +2653,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.5/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube,",
                             Title = "Kiss the Girls",
-                            VideoKey = "https://youtu.be/duTNQE0NnlI?si=WurOBvXgKNV3C7NR ",
+                            VideoKey = " ",
                             Year = 1978
                         },
                         new
@@ -2667,7 +2669,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube,",
                             Title = "Under Suspicion",
-                            VideoKey = "https://youtu.be/c2w_cP9_3P4?si=v-WmnzaWS9bDtX2h ",
+                            VideoKey = " ",
                             Year = 2000
                         },
                         new
@@ -2683,7 +2685,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3.8/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube,",
                             Title = "Now You See Me",
-                            VideoKey = "https://youtu.be/KzJNYYkkhzc?si=XfRmR6syE_AWmUy8 ",
+                            VideoKey = " ",
                             Year = 2013
                         },
                         new
@@ -2699,7 +2701,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "3/5",
                             SteamingOn = "Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Tubi",
                             Title = "Now You See Me 2",
-                            VideoKey = "https://youtu.be/4I8rVcSQbic?si=d3ua2LY1xBaLnQAe ",
+                            VideoKey = " ",
                             Year = 2016
                         },
                         new
@@ -2715,7 +2717,7 @@ namespace CaptoneBEMovie.Migrations
                             Rating = "4/5",
                             SteamingOn = "Roku Channel, Paramount,  Apple TV, Amazon Prime, Vudu, Google Play Movies & TV, YouTube, Redbox, Max, Hulu, Showtime",
                             Title = "Gone Baby Gone",
-                            VideoKey = "https://youtu.be/JyT0_wfQR2Y?si=mjty9kqigR7B7ulH ",
+                            VideoKey = " ",
                             Year = 2007
                         },
                         new
